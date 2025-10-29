@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakar Padi - Tentang Sistem Pakar Diagnosis Penyakit Tanaman Padi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-white font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-green-700 rounded-full flex items-center justify-center">
+                        <i class="fas fa-seedling text-white text-lg"></i>
+                    </div>
+                    <span class="text-xl font-bold text-green-800">Pakar Padi</span>
+                </div>
+                
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="px-4 py-2 rounded-md hover:bg-green-100 text-green-800 font-medium transition">Home</a>
+                    <a href="#about" class="px-4 py-2 rounded-md hover:bg-green-100 text-green-800 font-medium transition nav-active">Tentang</a>
+                    <a href="#mulai-diagnosis" class="px-4 py-2 rounded-md hover:bg-green-100 text-green-800 font-medium transition">Diagnosa</a>
+                    <a href="riwayat.html" class="px-4 py-2 rounded-md hover:bg-green-100 text-green-800 font-medium transition">Riwayat</a>
+                    <a href="kontak.html" class="px-4 py-2 rounded-md hover:bg-green-100 text-green-800 font-medium transition">Kontak</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <a href="login.html" class="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-md flex items-center space-x-2 transition">
+                        <i class="fas fa-user text-sm"></i>
+                        <span>Login</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="py-0">
+        <!-- About Section -->
+        <section id="about" class="py-12 bg-green-50">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl font-bold text-green-800 text-center mb-4">Tentang Sistem</h1>
+                <p class="text-center text-gray-700 max-w-4xl mx-auto mb-8">
+                    Sistem Pakar Diagnosis Penyakit Tanaman Padi adalah aplikasi berbasis web yang menggunakan kombinasi metode Forward Chaining dan Certainty Factor untuk membantu petani dan penyuluh pertanian dalam mendiagnosis penyakit tanaman padi secara akurat dan efisien.
+                </p>
+            </div>
+        </section>
+
+        <!-- Methods Section -->
+        <section class="py-12">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-green-800 text-center mb-4">Metode yang Digunakan</h2>
+                <p class="text-center text-gray-600 mb-8">Kombinasi dua metode untuk hasil diagnosis yang akurat</p>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Forward Chaining -->
+                    <div class="feature-card bg-white p-6 rounded-xl shadow-lg">
+                        <div class="w-12 h-12 bg-green-700 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-search text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-green-800 mb-3">Forward Chaining</h3>
+                        <p class="text-gray-600 mb-4">Metode inferensi yang bekerja dari fakta-fakta yang diketahui menuju kesimpulan. Sistem akan menganalisis gejala-gejala yang dipilih pengguna untuk menentukan jenis penyakit.</p>
+                        
+                        <div class="space-y-2">
+                            <div class="flex items-start space-x-2">
+                                <i class="fas fa-check text-green-700 mt-1"></i>
+                                <span>Analisis berdasarkan gejala visual</span>
+                            </div>
+                            <div class="flex items-start space-x-2">
+                                <i class="fas fa-check text-green-700 mt-1"></i>
+                                <span>Proses logika dari fakta ke kesimpulan</span>
+                            </div>
+                            <div class="flex items-start space-x-2">
+                                <i class="fas fa-check text-green-700 mt-1"></i>
+                                <span>Hasil diagnosis yang sistematis</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Certainty Factor -->
+                    <div class="feature-card bg-white p-6 rounded-xl shadow-lg">
+                        <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-percent text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-green-800 mb-3">Certainty Factor</h3>
+                        <p class="text-gray-600 mb-4">Metode untuk menangani ketidakpastian dalam sistem pakar. Memberikan nilai kepercayaan terhadap diagnosis berdasarkan tingkat keyakinan pengguna.</p>
+                        
+                        <div class="space-y-2">
+                            <div class="flex items-start space-x-2">
+                                <i class="fas fa-check text-green-700 mt-1"></i>
+                                <span>Perhitungan tingkat kepercayaan</span>
+                            </div>
+                            <div class="flex items-start space-x-2">
+                                <i class="fas fa-check text-green-700 mt-1"></i>
+                                <span>Menangani ketidakpastian data</span>
+                            </div>
+                            <div class="flex items-start space-x-2">
+                                <i class="fas fa-check text-green-700 mt-1"></i>
+                                <span>Hasil diagnosis dengan persentase</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="py-12 bg-green-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-green-800 text-center mb-4">Cara Kerja Sistem</h2>
+                <p class="text-center text-gray-600 mb-8">Proses diagnosis yang sistematis dan mudah dipahami</p>
+                
+                <div class="grid md:grid-cols-4 gap-6">
+                    <!-- Step 1 -->
+                    <div class="feature-card bg-white p-6 rounded-xl shadow-lg text-center">
+                        <div class="w-16 h-16 bg-green-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-xl font-bold">1</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-green-800 mb-2">Input Gejala</h3>
+                        <p class="text-gray-600">Pilih gejala yang terlihat pada tanaman padi Anda</p>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="feature-card bg-white p-6 rounded-xl shadow-lg text-center">
+                        <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-xl font-bold">2</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-green-800 mb-2">Analisis</h3>
+                        <p class="text-gray-600">Sistem menganalisis menggunakan Forward Chaining</p>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="feature-card bg-white p-6 rounded-xl shadow-lg text-center">
+                        <div class="w-16 h-16 bg-green-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-xl font-bold">3</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-green-800 mb-2">Perhitungan CF</h3>
+                        <p class="text-gray-600">Menghitung tingkat kepastian dengan Certainty Factor</p>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="feature-card bg-white p-6 rounded-xl shadow-lg text-center">
+                        <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-xl font-bold">4</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-green-800 mb-2">Hasil & Solusi</h3>
+                        <p class="text-gray-600">Dapatkan diagnosis dan rekomendasi penanganan</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section id="mulai-diagnosis" class="bg-green-700 py-12">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl font-bold text-white mb-4">Siap Melakukan Diagnosis?</h2>
+                    <p class="text-xl text-white mb-8">Gunakan sistem pakar kami untuk mendiagnosis penyakit tanaman padi Anda dengan cepat dan akurat</p>
+                    <a href="diagnosa.html" class="btn-cta px-8 py-3 text-lg font-bold inline-flex items-center space-x-2">
+                        <i class="fas fa-seedling"></i>
+                        <span>Mulai Diagnosa Sekarang</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-bg text-white pt-8 pb-4">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-green-700 rounded-full flex items-center justify-center">
+                            <i class="fas fa-seedling text-white text-lg"></i>
+                        </div>
+                        <span class="text-xl font-bold">Pakar Padi</span>
+                    </div>
+                    <p class="text-sm text-green-200 mb-4">Sistem pakar diagnosis penyakit tanaman padi berbasis web menggunakan metode hybrid Forward Chaining dan Certainty Factor untuk membantu petani mendeteksi penyakit tanaman padi secara dini.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-green-200 hover:text-white">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-green-200 hover:text-white">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-green-200 hover:text-white">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-green-200 hover:text-white">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Menu Utama</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="#about" class="footer-link">Tentang</a></li>
+                        <li><a href="#mulai-diagnosis" class="footer-link">Diagnosa</a></li>
+                        <li><a href="riwayat.html" class="footer-link">Riwayat</a></li>
+                        <li><a href="kontak.html" class="footer-link">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Kontak</h3>
+                    <ul class="space-y-2 text-green-200">
+                        <li class="flex items-start space-x-2">
+                            <i class="fas fa-map-marker-alt mt-1"></i>
+                            <span>Universitas Muhammadiyah Sidoarjo</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <i class="fas fa-envelope mt-1"></i>
+                            <span>info@pakarpadi.com</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <i class="fas fa-phone mt-1"></i>
+                            <span>+62 123 456 789</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Sistem Pakar Padi</h3>
+                    <p class="text-sm text-green-200 mb-4">AI-Powered Diagnosis</p>
+                    <p class="text-sm text-green-200">Sistem pakar diagnosis penyakit tanaman padi menggunakan metode hybrid Forward Chaining dan Certainty Factor untuk membantu petani mengenali penyakit lebih dini.</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-green-700 mt-8 pt-4 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm text-green-200">© 2025 Muchammad Issom Agustian – Sistem Pakar Diagnosis Penyakit Tanaman Padi</p>
+                <p class="text-sm text-green-200 mt-4 md:mt-0">Powered by Readdy</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
