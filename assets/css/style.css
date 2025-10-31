@@ -6,10 +6,6 @@
    GLOBAL STYLES (dari index.html & about.html)
    ============================================ */
 
-.hero-bg {
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://placehold.co/1920x800/3a7d44/ffffff?text=Rice+Fields') no-repeat center center;
-    background-size: cover;
-}
 
 .nav-active {
     background-color: #e0f7e0;
